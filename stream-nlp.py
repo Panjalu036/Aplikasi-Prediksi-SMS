@@ -3,11 +3,11 @@ import streamlit as st
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 # load save model
-model_fraud = pickle.load(open('model_fraud.sav','rb'))
+model_fraud = pickle.load(open('model_Predikksi_SMS.sav','rb'))
 
 tfidf = TfidfVectorizer
 
-loaded_vec = TfidfVectorizer(decode_error="replace", vocabulary=set(pickle.load(open("new_selected_feature_tf-idf.sav", "rb"))))
+loaded_vec = TfidfVectorizer(decode_error="replace", vocabulary=set(pickle.load(open("fitur_baru-_tf-idf.sav", "rb"))))
 
 
 # judul halaman
